@@ -21,6 +21,10 @@
 #
 #   - initial release
 #
+# 0.002
+#
+#   - ...
+#
 # REPOSITORY
 #
 # https://github.com/xdg/weechat-atcomplete
@@ -28,7 +32,7 @@
 use strict;
 use warnings;
 my $SCRIPT_NAME = "atcomplete";
-my $VERSION = "0.001";
+my $VERSION = "0.002";
 
 my %options_default = (
     'enabled' => ['on', 'enable completion of nicks starting with @'],
