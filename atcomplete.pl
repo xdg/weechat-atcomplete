@@ -44,7 +44,7 @@ weechat::hook_completion("nicks", "Add @ prefix to nick completion", "complete_a
 
 sub complete_at_nicks {
     my ($data, $completion_item, $buffer, $completion ) = @_;
-    return weechat::WEECHAT_RC_OK() unless $options{at_complete_enabled} eq 'on';
+    return weechat::WEECHAT_RC_OK() unless $options{enabled} eq 'on';
 
     my $nicklist = weechat::infolist_get("nicklist", weechat::current_buffer(), "");
 
