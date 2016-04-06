@@ -20,6 +20,10 @@
 # 0.001 -- xdg, 2016-04-06
 #
 #   - initial release
+#
+# REPOSITORY
+#
+# https://github.com/xdg/weechat-atcomplete
 
 use strict;
 use warnings;
