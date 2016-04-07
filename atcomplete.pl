@@ -23,7 +23,8 @@
 #
 # 0.002
 #
-#   - ...
+#   - @-nicks added to end of list so completing "rob" will give
+#     "robert" first and not "@robert".
 #
 # REPOSITORY
 #
@@ -56,7 +57,7 @@ sub complete_at_nicks {
         while (weechat::infolist_next($nicklist)) {
             next unless weechat::infolist_string($nicklist, "type") eq "nick";
             my $nick = weechat::infolist_string($nicklist, "name");
-            weechat::hook_completion_list_add($completion, "\@$nick", 1, weechat::WEECHAT_LIST_POS_SORT());
+            weechat::hook_completion_list_add($completion, "\@$nick", 1, weechat::WEECHAT_LIST_POS_END());
         }
     }
 
