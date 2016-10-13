@@ -61,6 +61,8 @@ sub complete_at_nicks {
         }
     }
 
+    weechat::infolist_free($nicklist);
+
     return weechat::WEECHAT_RC_OK();
 }
 
